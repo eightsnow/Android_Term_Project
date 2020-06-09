@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xys.homework.shortvideo.VideoPlayerIJK
+        android:id="@+id/ijkPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/rl_change_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#66313133">
+        <ImageView
+            android:id="@+id/iv_change_progress"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/video_fast_forward"/>
+        <TextView
+            android:id="@+id/tv_change_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorText"
+            android:layout_below="@id/iv_change_progress"
+            android:text="00:00 / 00:00"/>
+    </RelativeLayout>
+
+    <com.xys.homework.shortvideo.VideoPlayerTouchView
+        android:id="@+id/videoPlayerTouchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" />
+
+    </com.xys.homework.shortvideo.VideoPlayerTouchView>
+
+</RelativeLayout>
+

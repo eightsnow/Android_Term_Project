@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xys.homework.shortvideo.VideoTikTokTouchView
+        android:id="@+id/videoTikTokTouchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <com.xys.homework.shortvideo.VideoPlayerIJK
+            android:id="@+id/ijkPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+        </com.xys.homework.shortvideo.VideoPlayerIJK>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" />
+
+    </com.xys.homework.shortvideo.VideoTikTokTouchView>
+
+    <com.xys.homework.shortvideo.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_avatar"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/like_before"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_likecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_like"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorText"
+            android:text="7777" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text"
+        android:textColor="@color/colorText"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/text"
+        android:textColor="@color/colorText"
+        android:text="TextViewTextViewTextViewTextViewTextVi" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"/>
+
+</RelativeLayout>

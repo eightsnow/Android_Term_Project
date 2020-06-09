@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab">40dp</dimen>
+    <dimen name="move">10dp</dimen>
+    <dimen name="click">5dp</dimen>
+
+    <dimen name="text">16sp</dimen>
+</resources>
